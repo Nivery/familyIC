@@ -15,7 +15,7 @@ $databaseConfig = array(
 
 MySQLDatabase::set_connection_charset('utf8');
 
-// Set the current theme. More themes can be downloaded from
+// Set the current theme. More themes cann be downloaded from
 // http://www.silverstripe.org/themes/
 SSViewer::set_theme('simple');
 
