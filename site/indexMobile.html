@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>Home
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="css/themes/iowaCitySite.css" />
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+        <!-- User-generated css -->
+        <style>
+        </style>
+        <!-- User-generated js -->
+        <script>
+            try {
+
+    $(function() {
+
+    });
+
+  } catch (error) {
+    console.error("Your javascript has an error: " + error);
+  }
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="home" data-title="Home">
+			<div data-theme="f" data-role="header">
+				<div style="">
+                    <img src="http://www.juanfernandomaestre.com/images/IowaCityBannerLogo.png" />
+                </div>
+			</div>
+            <div data-role="content">
+				<ul data-role="listview" data-theme="f">
+					<li><a href="iowa.html" data-transition="slidefade"><img src="images/IowaCityIcon.png"/>Iowa City<p>general info, housing, maps..</p></a></li>
+					<li><a href="#"><img src="images/healthIcon.png"/>Health<p>child care, doctors, tips..</p></a></li>
+					<li><a href="#"><img src="images/educationIcon.png"/>Education<p>schools, programs, student life..</p></a></li>
+					<li><a href="#"><img src="images/entertainmentIcon.png"/>Entertainment<p>sports, parks, gyms, events..</p></a></li>
+				</ul>
+            </div>
+            <div data-theme="f" data-role="footer" data-position="fixed">
+                <h3>
+                </h3>
+                <a data-role="button" data-theme="f" href="http://informatics.grad.uiowa.edu/" data-icon="forward" data-iconpos="left" class="ui-btn-right">
+                    Full website
+                </a>
+                <a data-role="button" data-theme="f" href="#calendar" data-icon="gear" data-iconpos="left" class="ui-btn-left" data-rel="dialog" data-transition="pop">
+                    Calendar
+                </a>
+            </div>
+        </div>
+		<div data-role="page" id="calendar">
+			<div data-role="header" data-theme="i"><h3>Calendar</h3>
+			</div>
+			<div data-role="content">
+				<img src="images/calendar.png">
+			</div>
+		</div>
+	</body>
+</html>
