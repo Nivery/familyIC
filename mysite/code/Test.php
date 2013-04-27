@@ -2,7 +2,8 @@
 class Test extends Page {
 
 	public static $db = array(
-	"Blech" => "Text"
+	"Blech" => "Text",
+	"Blech3" => "Text"
 	);
 
 	public static $has_one = array(
