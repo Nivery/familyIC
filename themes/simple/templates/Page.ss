@@ -22,24 +22,38 @@ Change it, enhance it and most importantly enjoy it!
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 	<% require themedCSS('reset') %>
 	<% require themedCSS('typography') %>
 	<% require themedCSS('form') %>
-	<% require themedCSS('layout') %>
+	<% require themedCSS('layout') %> 
+	
+<link rel="stylesheet" type="text/css" href="site/css/my.css">
+<link rel="stylesheet" type="text/css" href="site/css/themes/iowaCitySite.css">
+
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
 <% include Header %>
-<div class="main" role="main">
-	<div class="inner typography line">
+<div class="main" role="main"
+>	<div class="inner typography line">
 		$Layout
 	</div>
 </div>
 <% include Footer %>
 
-<% require javascript('framework/thirdparty/jquery/jquery.js') %>
-<%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
 <script type="text/javascript" src="{$ThemeDir}/javascript/script.js"></script>
+</script>
+
+<script src="site/my.js">
+</script>
+<!-- User-generated css -->
+<style>
+</style>
 
 </body>
 </html>

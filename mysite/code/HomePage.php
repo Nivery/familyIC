@@ -1,22 +1,20 @@
 <?php
-class Test extends Page {
+class HomePage extends Page {
 
 	public static $db = array(
-	"Blech" => "Text",
-	"Blech3" => "Text"
-
 	);
 
 	public static $has_one = array(
+	'Logo' => 'Image'
 	);
 
 }
-class Test_Controller extends Page_Controller {
+class HomePage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
 	 * permissions or conditions required to allow the user to access it.
-	 * Hello Drew
+	 *
 	 * <code>
 	 * array (
 	 *     'action', // anyone can access this action
@@ -31,6 +29,5 @@ class Test_Controller extends Page_Controller {
 	public static $allowed_actions = array (
 	);
 
-	
 
 }
