@@ -34,7 +34,7 @@
     </head>
     <body>
         <!-- Home -->
-        <div data-role="page" id="news" data-title="News & Events">
+        <div data-role="page" id="living" data-title="Living in IC">
             <div data-theme="f" data-role="header" data-id="header" data-position="fixed">
                 <a data-role="button" data-theme="f" href="indexMobile.html" data-icon="home" data-iconpos="left" class="ui-btn-left" data-transition="slidedown">
                     Home
@@ -43,85 +43,129 @@
                     Full Site
                 </a>
                 <h3>
-                    Iowa City
+                    Living in Iowa City
                 </h3>
             </div>
             <div data-role="content">
 				<div data-role="collapsible-set" data-theme="f">
 					<div data-role="collapsible" data-iconpos="right">
 						<h3>
-							Living							
+							Health							
 							<!-- <span class="abstract">transit, parking, weather... </span> -->
 						</h3>
 						<ul data-role="listview" data-theme="g">
-							<li><a href="">housing & utilities</a></li>
-							<li><a href="">cost of living</a></li>
-							<li><a href="">tips</a></li>
+							<li>Doctors
+								<ul data-role="listview" data-filter="true">
+									<li><a href="#"><h3>Field 1</h3><p>explanation</p></a>
+										<ul data-role="listview" data-filter="true">
+											<li><a href="#"><img src="images/IowaCityIcon.png"/><h3>Name Doctor 1</h3><p>explanation</p></a></li>
+											<li><a href="#"><img src="images/IowaCityIcon.png"/><h3>Name Doctor 2</h3><p>explanation</p></a></li>
+											<li><a href="#"><img src="images/IowaCityIcon.png"/><h3>Name Doctor 3</h3><p>explanation</p></a></li>
+											<li data-icon="back"><a href="#living">Back</a></li>
+										</ul>
+									</li>
+									<li><a href="#"><h3>Field 2</h3><p>explanation</p></a></li>
+									<li><a href="#"><h3>Field 3</h3><p>explanation</p></a></li>
+									<li><a href="#"><h3>Field 4</h3><p>explanation</p></a></li>
+									<li><a href="#"><h3>Field 5</h3><p>explanation</p></a></li>
+									<li data-icon="back"><a href="#living">Back</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Child Care</a></li>
+							<li><a href="#">Costs & Insurance</a></li>
+							<li><a href="iowaLivingMap.html">Map</a></li>
+							<li><a href="#">Events</a></li>
+							<li><a href="#">Tips</a></li>
 						</ul>
 					</div>
 					<div data-role="collapsible" data-iconpos="right">
 						<h3>
-							Getting around
+							Education
 							<!-- <span class="abstract">transit, parking, weather... </span> -->
 						</h3>
 						<ul data-role="listview" data-theme="g">
-							<li><a href="">transit & parking</a></li>
-							<li><a href="">map</a></li>
-							<li><a href="">tips</a></li>
+							<li><a href="">Children</a></li>
+							<li><a href="">Adults</a></li>
+							<li><a href="">Costs & Scholarships</a></li>
+							<li><a href="">Library & books</a></li>
+							<li><a href="">Map</a></li>
+							<li><a href="">Events</a></li>
+							<li><a href="">Tips</a></li>
 						</ul>
 					</div>
 					<div data-role="collapsible" data-iconpos="right">
 						<h3>
-							Shop & Save!
+							Recreation
 							<!-- <span class="abstract">transit, parking, weather... </span> -->
 						</h3>
 						<ul data-role="listview" data-theme="g">
-							<li><a href="">food</a></li>
-							<li><a href="">clothing</a></li>
-							<li><a href="">gifts</a></li>
-							<li><a href="">tips</a></li>
+							<li><a href="">Children</a>
+								<ul data-role="listview" data-filter="true">
+									<li><a href="#"><h3>Sports</h3></a>
+										<ul data-role="listview" data-filter="true">
+											<li><a href="#"><img src="images/IowaCityIcon.png"/><h3>Soccer</h3></a></li>
+											<li><a href="#"><img src="images/IowaCityIcon.png"/><h3>Tennis</h3></a></li>
+											<li><a href="#"><img src="images/IowaCityIcon.png"/><h3>Basketball</h3></a></li>
+											<li data-icon="back"><a href="#living">Back</a></li>
+										</ul>
+									</li>
+									<li data-icon="back"><a href="#living">Back</a></li>
+								</ul>
+							</li>
+							<li><a href="">Adults</a>
+								<ul data-role="listview" data-filter="true">
+									<li><a href="#"><h3>Sports</h3></a>
+										<ul data-role="listview" data-filter="true">
+											<li><a href="#"><img src="images/IowaCityIcon.png"/><h3>Soccer</h3></a></li>
+											<li><a href="#"><img src="images/IowaCityIcon.png"/><h3>Tennis</h3></a></li>
+											<li><a href="#"><img src="images/IowaCityIcon.png"/><h3>Basketball</h3></a></li>
+											<li data-icon="back"><a href="#living">Back</a></li>
+										</ul>
+										<li><a href="#"><h3>Gyms</h3></a></li>
+										<li data-icon="back"><a href="#living">Back</a></li>
+									</li>
+									
+								</ul>
+							</li>
+							<li><a href="">Family</a></li>
+							<li><a href="">Map</a></li>
+							<li><a href="">Events</a></li>
+							<li><a href="">Tips</a></li>
 						</ul>
 					</div>
 					<div data-role="collapsible" data-iconpos="right">
 						<h3>
-							Events
+							Housing & Utilities
 							<!-- <span class="abstract">transit, parking, weather... </span> -->
 						</h3>
 						<ul data-role="listview" data-theme="g">
-							<li><a href="">April</a></li>
-							<li><a href="">May</a></li>
-							<li><a href="">June</a></li>
-							<li><a href="">July</a></li>
-							<li><a href="">August</a></li>
+							<li><a href="iowaLivingOnCampus.html">On-Campus</a></li>
+							<li><a href="">Off-Campus</a></li>
 						</ul>
 					</div>
-				</div><br />
-				<ul data-role="listview" data-divider-theme="f" >
-					<li data-role="list-divider">Calendar</li>
-				</ul><br />
-				<img src="images/calendar.png" />
+				</div>
 			</div>
 			<div data-theme="f" data-role="footer" data-position="fixed" data-id="footer">
 				<div data-role="navbar" data-iconpos="left">
 					<ul>
 						<li>
 							<a href="#" data-transition="fade" data-theme="h">
-								<strong>Iowa City</strong>
+								<strong>Living</strong>
 							</a>
 						</li>
 						<li>
-							<a href="#" data-transition="fade" data-theme="f">
-								Health
+							<a href="gettingAround.html" data-transition="fade" data-theme="f">
+								Getting Around
 							</a>
 						</li>
 						<li>
-							<a href="#" data-transition="fade" data-theme="f">
-								Education
+							<a href="shopSave.html" data-transition="fade" data-theme="f">
+								Shop
 							</a>
 						</li>
 						<li>
-							<a href="#" data-transition="fade" data-theme="f">
-								Entertainment
+							<a href="events.html" data-transition="fade" data-theme="f">
+								Events
 							</a>
 						</li>
 					</ul>
