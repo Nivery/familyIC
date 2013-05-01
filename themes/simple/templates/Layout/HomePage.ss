@@ -11,10 +11,15 @@
 			</div>
             <div data-role="content">
 				<ul data-role="listview" data-theme="f">
+					<!--
 					<li><a href="iowa.html" data-transition="slidefade"><img src="/stripe/site/images/IowaCityIcon.png"/>Iowa City<p>general info, housing, maps..</p></a></li>
 					<li><a href="#"><img src="/stripe/site/images/healthIcon.png"/>Health<p>child care, doctors, tips..</p></a></li>
 					<li><a href="#"><img src="/stripe/site/images/educationIcon.png"/>Education<p>schools, programs, student life..</p></a></li>
-					<li><a href="#"><img src="/stripe/site/images/entertainmentIcon.png"/>Entertainment<p>sports, parks, gyms, events..</p></a></li>
+					<li><a href="#"><img src="/stripe/site/images/entertainmentIcon.png"/>Entertainment<p>sports, parks, gyms, events..</p></a></li>-->
+					<% loop Children %>
+						<li><a href="{$Link}" data-transition="slidefade"><img src="{$Icon.URL}"/>$Title<p>$Content</p></a></li>
+
+					<% end_loop %> 
 				</ul>
             </div>
             <div data-theme="f" data-role="footer" data-position="fixed">

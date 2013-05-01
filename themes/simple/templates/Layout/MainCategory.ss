@@ -11,55 +11,22 @@
                 </h3>
             </div>
             <div data-role="content">
-				<div data-role="collapsible-set" data-theme="f">
-					<div data-role="collapsible" data-iconpos="right">
+            	<div data-role="collapsible-set" data-theme="f">
+            	<% loop Children %>
+            		<div data-role="collapsible" data-iconpos="right">
 						<h3>
-							Living							
+							$Title							
 							<!-- <span class="abstract">transit, parking, weather... </span> -->
 						</h3>
 						<ul data-role="listview" data-theme="g">
-							<li><a href="">housing & utilities</a></li>
-							<li><a href="">cost of living</a></li>
-							<li><a href="">tips</a></li>
+							<% loop Children %>
+								<li><a href="{$Link}">housing & utilities</a></li>
+							<% end_loop %>
 						</ul>
 					</div>
-					<div data-role="collapsible" data-iconpos="right">
-						<h3>
-							Getting around
-							<!-- <span class="abstract">transit, parking, weather... </span> -->
-						</h3>
-						<ul data-role="listview" data-theme="g">
-							<li><a href="">transit & parking</a></li>
-							<li><a href="">map</a></li>
-							<li><a href="">tips</a></li>
-						</ul>
-					</div>
-					<div data-role="collapsible" data-iconpos="right">
-						<h3>
-							Shop & Save!
-							<!-- <span class="abstract">transit, parking, weather... </span> -->
-						</h3>
-						<ul data-role="listview" data-theme="g">
-							<li><a href="">food</a></li>
-							<li><a href="">clothing</a></li>
-							<li><a href="">gifts</a></li>
-							<li><a href="">tips</a></li>
-						</ul>
-					</div>
-					<div data-role="collapsible" data-iconpos="right">
-						<h3>
-							Events
-							<!-- <span class="abstract">transit, parking, weather... </span> -->
-						</h3>
-						<ul data-role="listview" data-theme="g">
-							<li><a href="">April</a></li>
-							<li><a href="">May</a></li>
-							<li><a href="">June</a></li>
-							<li><a href="">July</a></li>
-							<li><a href="">August</a></li>
-						</ul>
-					</div>
-				</div><br />
+				<% end_loop %>
+            	
+				</div><br />-->
 				<ul data-role="listview" data-divider-theme="f" >
 					<li data-role="list-divider">Calendar</li>
 				</ul><br />

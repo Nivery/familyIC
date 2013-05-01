@@ -1,24 +1,16 @@
 <?php
-class MainCategory extends ParentPage {
+class Subpage extends ParentPage {
 
 	public static $db = array(
-
+	
 	);
 
 	public static $has_one = array(
-	'Icon' => 'Image'
+	'Logo' => 'Image'
 	);
 
-	public function getCMSFields(){
-		$fields = parent::getCMSFields();
-
-		$fields->addFieldToTab('Root.Main', new UploadField('Icon'));
-
-		return $fields;
-	}
-
 }
-class MainCategory_Controller extends ParentPage_Controller {
+class Subpage_Controller extends ParentPage_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
