@@ -1,15 +1,16 @@
 <?php
-class MainCategory extends ParentPage {
+class ParentPage extends SiteTree {
 
 	public static $db = array(
+	'Blah' => 'Text'
+
 	);
 
 	public static $has_one = array(
-	'Logo' => 'Image'
 	);
 
 }
-class MainCategory_Controller extends ParentPage_Controller {
+class ParentPage_Controller extends ContentController {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -29,5 +30,13 @@ class MainCategory_Controller extends ParentPage_Controller {
 	public static $allowed_actions = array (
 	);
 
+	public function init() {
+		parent::init();
+
+		// Note: you should use SS template require tags inside your templates 
+		// instead of putting Requirements calls here.  However these are 
+		// included so that our older themes still work
+		
+	}
 
 }

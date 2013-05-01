@@ -1,5 +1,5 @@
 <?php
-class HomePage extends Page {
+class HomePage extends ParentPage {
 
 	public static $db = array(
 	);
@@ -9,7 +9,7 @@ class HomePage extends Page {
 	);
 
 }
-class HomePage_Controller extends Page_Controller {
+class HomePage_Controller extends ParentPage_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the

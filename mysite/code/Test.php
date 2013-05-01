@@ -1,5 +1,5 @@
 <?php
-class Test extends Page {
+class Test extends ParentPage {
 
 	public static $db = array(
 	"Blech" => "Text",
@@ -11,7 +11,7 @@ class Test extends Page {
 	);
 
 }
-class Test_Controller extends Page_Controller {
+class Test_Controller extends ParentPage_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
