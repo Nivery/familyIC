@@ -26,8 +26,9 @@ Change it, enhance it and most importantly enjoy it!
 	<% require themedCSS('reset') %>
 	
 	<% require themedCSS('form') %>
-	<% require themedCSS('layout') %> 
+	<% require themedCSS('layout') %> 	
 	
+
 <link rel="stylesheet" type="text/css" href="site/css/my.css">
 <link rel="stylesheet" type="text/css" href="site/css/themes/iowaCitySite.css">
 
