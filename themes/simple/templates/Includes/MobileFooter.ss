@@ -4,7 +4,7 @@
 		<ul>
 		<% loop ChildrenOf('icmobile') %>
 			<li>
-				<a href="{$Link}" data-transition="fade" data-theme="f">
+				<a href="{$Link}" data-transition="fade" <% if InSection($URLSegment) %> data-theme="h" <% else %>data-theme="f"<% end_if %>
 					<strong>$Title</strong>
 				</a>
 			</li>

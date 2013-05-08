@@ -23,6 +23,7 @@ Change it, enhance it and most importantly enjoy it!
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+
 	<% require themedCSS('reset') %>
 	
 	<% require themedCSS('form') %>
@@ -30,21 +31,40 @@ Change it, enhance it and most importantly enjoy it!
 	
 
 <link rel="stylesheet" type="text/css" href="site/css/my.css">
+<link rel="stylesheet" type="text/css" href="site/css/fer.css">
 <link rel="stylesheet" type="text/css" href="site/css/themes/iowaCitySite.css">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).bind("mobileinit", function() {
+      //Set your global init settings here
+      
+      //This is the setting you are looking for!
+      $.mobile.defaultPageTransition = 'none';
+
+      console.log("Hi");
+      //alert("YO");
+      
+      //I personally use some other settings, such as:
+      $.mobile.page.prototype.options.addBackBtn = true;
+      $.mobile.useFastClick  = false;
+});
+</script>
+
 <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
 
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
 <% include Header %>
-<div class="main" role="main"
->	<div class="inner typography line">
+<div class="main" role="main">	
+	<div class="inner typography line">
 		$Layout
 	</div>
 </div>
-<% include Footer %>
+
 
 
 

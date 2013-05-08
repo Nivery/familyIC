@@ -6,8 +6,20 @@ class GenericPage extends ParentPage {
 	);
 
 	public static $has_one = array(
-	'Logo' => 'Image'
+	'Picture' => 'Image',
+	'Picture2' => 'Image'
 	);
+
+	public function getCMSFields(){
+
+		$fields = parent::getCMSFields();
+
+		$fields->addFieldToTab('Root.Main', new UploadField('Picture'));
+		$fields->addFieldToTab('Root.Main', new UploadField('Picture2'));
+
+		return $fields;
+
+	}
 
 }
 class GenericPage_Controller extends ParentPage_Controller {

@@ -6,12 +6,21 @@ class EventHolder extends ParentPage {
 	);
 
 	public static $has_one = array(
-	'Logo' => 'Image'
+	'Icon' => 'Image'
 	);
 
 	public static $allowed_children = array (
 	'EventPage'
 	);
+
+	public function getCMSFields(){
+		$fields = parent::getCMSFields();
+
+		$fields->addFieldToTab('Root.Main', new UploadField('Icon'));
+
+		return $fields;
+	}
+
 
 }
 

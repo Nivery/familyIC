@@ -1,30 +1,19 @@
 <?php
-class EventPage extends ParentPage {
+class ListHolder extends ParentPage {
 
 	public static $db = array(
-	'Date' => 'Date',
-
+	
 	);
 
 	public static $has_one = array(
-	'Picture' => 'Image'
+	'Logo' => 'Image'
 	);
 
-	public function getCMSFields(){
 
-	$fields = parent::getCMSFields();
-
-	$dateField = DateField::create('Date')->setConfig('showcalendar', true);
-	$fields->addFieldToTab('Root.Main', $dateField);
-
-	$fields->addFieldToTab('Root.Main', new UploadField('Picture'));
-	
-
-	return $fields;
-	}
 
 }
-class EventPage_Controller extends ParentPage_Controller {
+
+class ListHolder_Controller extends ParentPage_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -41,8 +30,7 @@ class EventPage_Controller extends ParentPage_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
-	);
+
 
 
 }

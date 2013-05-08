@@ -27,8 +27,7 @@ class ParentPage_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
-	);
+	
 
 	public function init() {
 		parent::init();

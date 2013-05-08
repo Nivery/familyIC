@@ -1,30 +1,25 @@
 <?php
-class EventPage extends ParentPage {
+class MapPageHousing extends ParentPage {
 
 	public static $db = array(
-	'Date' => 'Date',
-
+	'MapLink' => 'Text'
 	);
 
 	public static $has_one = array(
-	'Picture' => 'Image'
+	'Logo' => 'Image'
 	);
 
 	public function getCMSFields(){
+		$fields = parent::getCMSFields();
 
-	$fields = parent::getCMSFields();
+		$fields->addFieldToTab('Root.Main', new TextField('MapLink'));
 
-	$dateField = DateField::create('Date')->setConfig('showcalendar', true);
-	$fields->addFieldToTab('Root.Main', $dateField);
-
-	$fields->addFieldToTab('Root.Main', new UploadField('Picture'));
-	
-
-	return $fields;
+		return $fields;
 	}
 
+
 }
-class EventPage_Controller extends ParentPage_Controller {
+class MapPageHousing_Controller extends ParentPage_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
