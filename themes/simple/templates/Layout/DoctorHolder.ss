@@ -6,7 +6,7 @@
 				
 						<ul data-role="listview" data-filter="true">
 							<% loop Children %>
-								<li data-filtertext="{$getFilterText}"><a href="{$Website}" rel="external"><h3>$Name</h3><p>$Specialty<br />$Address<br />$PhoneNo<br />$Clinic</p></a></li>
+								<li data-filtertext="{$getFilterText}"><a href="{$Website}" rel="external"><% if Picture %><img src={$Picture.URL} /><% end_if %><h3>$Name</h3><p>$Specialty<br />$Address<br />$PhoneNo<br />$Clinic</p></a></li>
 							<% end_loop %>
 
 

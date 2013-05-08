@@ -36,23 +36,12 @@ Change it, enhance it and most importantly enjoy it!
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-<script type="text/javascript">
-$(document).bind("mobileinit", function() {
-      //Set your global init settings here
-      
-      //This is the setting you are looking for!
-      $.mobile.defaultPageTransition = 'none';
+<script src="themes/simple//javascript/mobileinit.js"></script>
 
-      console.log("Hi");
-      //alert("YO");
-      
-      //I personally use some other settings, such as:
-      $.mobile.page.prototype.options.addBackBtn = true;
-      $.mobile.useFastClick  = false;
-});
-</script>
 
 <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+ <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
 
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />

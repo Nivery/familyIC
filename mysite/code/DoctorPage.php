@@ -9,6 +9,8 @@ class DoctorPage extends ParentPage {
 	'Clinic' => 'Text',
 	'Website' => 'Text',
 	'FilterText' => 'Text',
+	'RandomTest' => 'Text',
+	'Filter' => 'Text'
 	);
 
 	public static $has_one = array(
@@ -25,25 +27,27 @@ class DoctorPage extends ParentPage {
 		$fields->addFieldToTab('Root.Main', new TextField('Address'));
 		$fields->addFieldToTab('Root.Main', new TextField('Clinic'));
 		$fields->addFieldToTab('Root.Main', new TextField('Website'));
-		$fields->addFieldToTab('Root.Main', new TextField('FilterText'));
+		$fields->addFieldToTab('Root.Main', new TextField('Filter'));
+		$fields->addFieldToTab('Root.Main', new UploadField('Picture'));
 		
 		return $fields;
 
 	}
-	/*
+	
 	public function getFilterText(){
 		$filterText = '';
-		$tempArray = array('Name', 'Specialty', 'PhoneNo', 'Address', 'Clinic', 'FilterText');
+		$tempArray = array('Name', 'Specialty', 'PhoneNo', 'Address', 'Clinic', 'Filter');
 		foreach ($tempArray as $temp){
 			if (isset($this->$temp)){
 				if ($this->$temp){
-					$filterText = $this->$temp . ' ';
+					$filterText = $filterText . ' ' . $this->$temp;
 				}
 			}
 		}
 	 	return $filterText;
 	}
-	*/
+	
+	
 
 
 }

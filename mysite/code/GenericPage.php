@@ -42,5 +42,12 @@ class GenericPage_Controller extends ParentPage_Controller {
 	public static $allowed_actions = array (
 	);
 
+	/*
+	public function onBeforePublish(){
+
+		parent::onBeforePublish();
+		$this->Content = str_replace(' src="assets/', ' src="/assets/', $this->Content);
+	}
+	*/
 
 }

@@ -42,8 +42,19 @@ class EventHolder_Controller extends ParentPage_Controller {
 	 * @var array
 	 */
 	public function getAllEvents(){
-		$events = EventPage::get()->sort('Date', 'ASC')->limit(5);
-		return $events;
+		//$events = EventPage::get()->sort('Date', 'DESC')->limit(5);
+		$limit = 10;
+
+		$items = DataObject::get("EventPage", "Date > NOW()", "Date", null, $limit);
+		return $items;
+
+	}
+
+	public function getChildEvents(){
+		 $dateToday = SS_Datetime::now()->Format('YYYY/mm/dd');
+		$children = $this->Children();
+		$children->filter(array('Date:LessThan' => $dateToday));
+		return $children;
 
 	}
 

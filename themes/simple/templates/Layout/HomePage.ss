@@ -14,7 +14,7 @@
 					
 					
 					<% loop Children %>
-						<li><a href="{$Link}" data-transition="slidefade"><img src="{$Icon.URL}"/>$Title<p>$Content</p></a></li>
+						<li><a href="{$Link}" ><img src="{$Icon.URL}"/>$Title<p>$Content</p></a></li>
 
 					<% end_loop %> 
 				</ul>

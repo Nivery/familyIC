@@ -7,11 +7,11 @@
 						<ul data-role="listview" data-filter="true">
 							<% if $URLSegment == "eventsmain" %>
 								<% loop getAllEvents %>
-									<li><% if Picture %><img src={$Picture.URL} /><% end_if %><h3><a href="{$Link}">$Title</a></h3><p>$Date<br />$Content.Summary(10)</p></li>
+									<li><a href="{$Link}"><% if Picture %><img src={$Picture.URL} /><% end_if %><h3>$Title</h3><p>$Date.NiceUS<br />$Content.Summary(10)</p></a></li>
 								<% end_loop %>
 							<% else %>
 								<% loop Children %>
-									<li><% if Picture %><img src={$Picture.URL} /><% end_if %><h3><a href="{$Link}">$Title</a></h3><p>$Date<br />$Content.Summary(10)</p></li>
+									<li><a href="{$Link}"><% if Picture %><img src={$Picture.URL} /><% end_if %><h3>$Title</h3><p>$Date.NiceUS<br />$Content.Summary(10)</p></a></li>
 								<% end_loop %>
 							<% end_if %>
 
